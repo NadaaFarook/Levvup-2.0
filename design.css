@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --green: #0acf83;
+  --black: #000000;
+  --lightgrey: #f2f2f2;
+  --darkgrey: #c4c4c4;
+}
+body {
+  background-color: var(--black);
+  color: var(--lightgrey);
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+  padding-inline: 5%;
+}
+nav {
+  height: 7vh;
+}
+nav img {
+  height: inherit;
+  padding-top: 1rem;
+}
+.section1 {
+  height: 93vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section1 .section-text {
+  width: 40%;
+}
+.section1 .section-image {
+  width: 50%;
+}
+.section1 .section-image img {
+  padding: 2.5rem;
+  width: -webkit-fill-available;
+}
+.section1 .section-text h1 {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.section1 .section-text span {
+  color: var(--green);
+}
+.section1 .section-text p {
+  font-size: 25px;
+  padding-block: 3rem;
+  color: var(--darkgrey);
+}
+.section1 .section-text button {
+  border: none;
+  background: var(--green);
+  padding: 0.7rem 3.3rem;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.section2 {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.section2 .section-text {
+  width: 60%;
+}
+.section2 .section-text h3 {
+  font-size: 25px;
+  padding-block: 1rem;
+  font-weight: 500;
+}
+.section2 .section-text p,
+.box p {
+  font-size: 20px;
+  color: var(--darkgrey);
+  letter-spacing: 0.4px;
+  line-height: 30px;
+}
+.section2 .section-image img {
+  height: 220px;
+  padding-right: 2rem;
+}
+.section3 {
+  padding-block: 4rem;
+}
+.section3 h2 {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 3rem;
+  font-size: 25px;
+  padding-block: 1rem;
+  font-weight: 500;
+}
+.box-wrapper {
+  margin-inline: 6rem;
+}
+.box {
+  width: 400px;
+  padding-inline: 1rem;
+}
+.box img {
+  width: 60px;
+  padding-bottom: 1rem;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-block: 3rem;
+}
+.section4 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 2rem;
+}
+.section4 button {
+  border: 1px solid var(--green);
+  background: #ffffff00;
+  padding: 1rem 3rem;
+  font-size: 20px;
+  border-radius: 5px;
+  color: var(--darkgrey);
+}
+footer {
+  color: var(--darkgrey);
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 4rem 0 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    height: 7vh;
+  }
+  nav img {
+    height: inherit;
+    padding-top: 1rem;
+  }
+  .section1 {
+    height: 93vh;
+    flex-direction: column-reverse;
+  }
+  .section1 .section-text {
+    width: 90%;
+    text-align: center;
+  }
+  .section1 .section-image {
+    width: 50%;
+  }
+  .section1 .section-image img {
+    padding: unset;
+    width: unset;
+  }
+  .section1 .section-text h1 {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .section1 .section-text span {
+    color: var(--green);
+  }
+  .section1 .section-text p {
+    font-size: 20px;
+    padding-block: 2rem;
+  }
+  .section2 {
+    flex-direction: column-reverse;
+  }
+  .section2 .section-text {
+    width: 90%;
+  }
+  .section2 .section-text h3 {
+    font-size: 20px;
+    padding-block: 2rem;
+    font-weight: 500;
+  }
+  .section2 .section-text p,
+  .box p {
+    font-size: 18px;
+  }
+
+  .section3 h2 {
+    width: 90%;
+    font-size: 20px;
+  }
+  .box-wrapper {
+    margin-inline: unset;
+    margin-block: 2rem;
+  }
+
+  .box {
+    width: 300px;
+    padding-inline: 1rem;
+    margin: 1rem 2rem;
+  }
+  .flex {
+    flex-direction: column;
+    margin-block: 0;
+  }
+  .section4 {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-block: 2rem;
+  }
+  .section4 button {
+    margin-bottom: 1rem;
+  }
+}
+
+.section4 button:hover,
+.section4 button:active {
+  background: #0acf8345;
+}
+.section1 button:hover {
+  background-color: #0acf83e3;
+}
