@@ -164,6 +164,7 @@ a {
   .section1 {
     height: 93vh;
     flex-direction: column-reverse;
+    justify-content: space-evenly;
   }
   .section1 .section-text {
     width: 90%;
